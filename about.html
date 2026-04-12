@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#c38560",
+                    "on-primary-container": "#4a2100",
+                    "on-background": "#1b1b1b",
+                    "on-tertiary-fixed": "#321200",
+                    "surface-dim": "#dadada",
+                    "surface-container": "#eeeeee",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#005773",
+                    "primary-container": "#e57407",
+                    "tertiary-fixed-dim": "#fdb78f",
+                    "secondary-fixed-dim": "#70d2ff",
+                    "inverse-primary": "#ffb786",
+                    "on-tertiary-fixed-variant": "#6a3b1c",
+                    "secondary": "#006686",
+                    "on-secondary-fixed-variant": "#004d66",
+                    "on-surface": "#1b1b1b",
+                    "background": "#f9f9f9",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#574336",
+                    "surface": "#f9f9f9",
+                    "surface-container-low": "#f3f3f3",
+                    "on-primary-fixed-variant": "#723600",
+                    "tertiary-fixed": "#ffdbc9",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#964900",
+                    "error": "#ba1a1a",
+                    "tertiary": "#865231",
+                    "on-tertiary-container": "#492104",
+                    "primary-fixed-dim": "#ffb786",
+                    "outline-variant": "#dec1b0",
+                    "inverse-on-surface": "#f1f1f1",
+                    "primary-fixed": "#ffdcc7",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary-fixed": "#311300",
+                    "secondary-container": "#68cffe",
+                    "surface-bright": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "primary": "#964900",
+                    "outline": "#8a7264",
+                    "inverse-surface": "#303030",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#c0e8ff",
+                    "surface-container-high": "#e8e8e8",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#001e2b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Work Sans"
+                    ],
+                    "body": [
+                            "Inter"
+                    ],
+                    "label": [
+                            "Inter"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(0, 102, 134, 0.08);
+        }
+        .glass-nav {
+            background-color: rgba(243, 243, 243, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_20px_40px_rgba(0,102,134,0.08)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-secondary tracking-tighter uppercase font-headline">CLIMATE ARCHITECT</div>
+<div class="hidden md:flex gap-8 items-center font-headline font-bold uppercase tracking-wider text-sm">
+<a class="text-slate-500 hover:text-secondary transition-colors" href="services.html">Services</a>
+<a class="text-slate-500 hover:text-secondary transition-colors" href="areas.html">Areas</a>
+<a class="text-secondary border-b-2 border-primary pb-1" href="about.html">About</a>
+<a class="text-slate-500 hover:text-secondary transition-colors" href="blog.html">Blog</a>
+<a class="text-slate-500 hover:text-secondary transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded shadow-lg shadow-primary/20 flex items-center gap-2 font-headline font-bold uppercase tracking-tight text-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="phone_in_talk">phone_in_talk</span>
+                    Call Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero: The Architects of Comfort -->
+<section class="relative px-6 py-16 md:py-24 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="text-primary font-headline font-black uppercase tracking-widest text-sm mb-4 block">Engineered for Jacksonville</span>
+<h1 class="text-5xl md:text-7xl font-headline font-black text-on-surface leading-tight tracking-tighter mb-6">
+                        MEET THE <br/> <span class="text-secondary">ARCHITECTS</span> OF YOUR COMFORT.
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed mb-8">
+                        At CLIMATE ARCHITECT, we don't just repair systems—we engineer environments. For over two decades, we’ve been the technical authority Jacksonville trusts to master the Florida heat.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container rounded-xl overflow-hidden shadow-2xl relative">
+<img alt="Professional Business Owner" class="w-full h-full object-cover" data-alt="portrait of a professional hvac business owner in a clean workshop setting, wearing a branded polo shirt, confident expression, architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfMOBPIP28ukfQxMsnvOJFOcfhCv6e6-oqusWqJHXp8IMUBpFeTAAa4i1OZ0BbZBMNd0MtvEf8Q8s3iV8TBp4Iad5LpbLxIGx_FMcSAWv8TZbPaCAZ3dkNiTYeMkgPxhTMhYK78JckkuYiUFmeTuJToWzHW7pOoHINYRImyFN-Obi4jJlHP2QzOwARc18g-vRH0xOAKcEcls_5YIEChsl0pIzZwomOKx6tAjkbSkYloD4_1e-GGzV_rIPpV44LjE5D2Q5ekIKVVBU"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 glass-nav rounded-lg editorial-shadow">
+<h3 class="font-headline font-bold text-xl text-secondary">Marcus Sterling</h3>
+<p class="text-sm font-medium text-on-surface-variant">Founder &amp; Master Mechanical Engineer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar: Tactical Precision -->
+<section class="bg-surface-container-low py-12 border-y border-outline-variant/15">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+<div class="flex flex-col items-center">
+<span class="text-primary font-headline font-black text-4xl mb-1">20+</span>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Years of Expertise</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">License #CAC123456</span>
+</div>
+<div class="flex flex-col items-center">
+<img alt="NATE Logo Placeholder" class="h-10 grayscale opacity-70 mb-2" data-alt="monochrome technical certification seal for nate certified hvac technicians on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr98d5OH9oPfF64VerrRyhr8D8uwC_x_NDuGM_yCJ3X7A4131UspPz2ztJ3xXrkrSOwG3kx7yUJJa6xCcA5Fnbes3rUNdiZ9WBqbO_Xn6nMFTjk4VblM9evOYm8ZVvA2pYpXKYUDHNd6zwJqfSk-GZB-0pMLaRd9sLMq87GHSv2lJOqbW65_HScid_aWvxPNmmlyQKH3UlZ9YWnhYcBP8VfafZDxhQt3laXLnferBoZVPk2rDhzfu4V2qzYeDkSC-tAahNg_bhuKc"/>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">NATE Certified Professionals</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2" data-icon="home_repair_service">home_repair_service</span>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Locally Owned</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story: Intentional Asymmetry -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div class="order-2 lg:order-1">
+<div class="relative">
+<img alt="Jacksonville HVAC Installation" class="rounded-xl shadow-xl w-full h-[500px] object-cover" data-alt="high contrast architectural photograph of industrial hvac units on a clean rooftop with jacksonville skyline in the distance at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3LXAXsBAjsXXc56ErV6xdv9aiS5TG890f7_0TmjhI3DU1IMLDaeos2G0vzPkflKG6Pwmc6VMaXpezADmAMqlgN6Kmp-SdcblHpgPO7aYkwBIwFrI15eXAvRI3iQ-bZm_Na5dmYiwW4SYxVs9VT6xdK7HsPg5bGuFawukt0kzyFa_-UdTScn0oy7jHB4tXpd-dJQhL8KUg1r-ZxQYv6IK82xLaF_ukS68KUvB5u0ItYOpodtOI7om_98Zivqi3WFPdUSYCE756htE"/>
+<div class="absolute -bottom-8 -right-8 bg-secondary p-8 rounded-xl hidden md:block max-w-[280px]">
+<p class="text-white font-headline font-bold italic leading-tight">"We don't just fix units. We architect climate solutions that last."</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl font-headline font-black text-on-surface mb-8 tracking-tight">OUR STORY: <br/><span class="text-primary-container">TECHNICAL INTEGRITY</span> SINCE 2004.</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p>
+                            Climate Architect was born from a simple observation: Jacksonville’s homes needed more than just a man with a wrench. They needed precision engineering. Starting with a single truck and a commitment to radical transparency, Marcus Sterling founded this company to bring editorial-level quality to the HVAC industry.
+                        </p>
+<p>
+                            As a locally owned and operated business, we treat every square foot of your home as if it were our own. We understand the specific demands that Florida’s humidity places on mechanical systems, and we’ve spent two decades perfecting the "Climate Blueprint"—our proprietary process for ensuring peak efficiency and surgical-grade indoor air quality.
+                        </p>
+<div class="pt-4 flex flex-col gap-4">
+<div class="flex items-start gap-4">
+<div class="bg-secondary/10 p-2 rounded">
+<span class="material-symbols-outlined text-secondary" data-icon="groups">groups</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Community First</h4>
+<p class="text-sm">Proud supporters of the Jacksonville Youth Engineering Program and local coastal conservation efforts.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section: Bento Grid Layout -->
+<section class="bg-surface-container py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-black text-on-surface mb-4">THE ENGINEERING TEAM</h2>
+<p class="text-on-surface-variant max-w-2xl">Elite technicians, background-checked and continuously trained on the latest smart-home climate technologies.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Tech 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow group">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img alt="Lead Technician" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="friendly hvac technician in a professional uniform holding a digital tablet, modern home interior background, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlOqlR4Vv3hyQiepqgLmgRFtPci2R8HxqqBQR-GqfWIT8NZCzZ_Vlj_BUZKEQqYH2G5qk_-1JYCVqSdm2vHeCPmiHIRyMztstTGEpplORVL-w2sttByTRl2MFsaDmxSFQiS3FldHj3qAaMiEHm-vIfZWcOaWTk8Glqj68nybh93B34iGeoMTZq4LiuzLx3KZ6b748BLYJ_L-uVySwUvdfTGEW4KBQkYaylB2sJTR_6URUYtJsxsrriTuCjIsXLWN7bxFLwUoDdvSU"/>
+</div>
+<h4 class="font-headline font-bold text-lg text-secondary">David Chen</h4>
+<p class="text-xs font-black uppercase text-primary mb-2 tracking-widest">Lead Diagnostics Specialist</p>
+<p class="text-sm text-on-surface-variant italic">"Precision is the difference between a fix and a solution."</p>
+</div>
+<!-- Tech 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow group">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img alt="Installation Expert" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="professional woman in mechanical uniform working with precision tools on a high-tech hvac unit, clean industrial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQnG0iDOO-V0SpBgDzn-4W-SB_M8IsHeac82eNyUSp_30mpgMUM7ZBaVbHSswvyCt7H8lIy338Z9hWKoB4ga7szvEPEz2U6PrqF6AyYTzllWltP536fVweTFzy12qwoudyqz6enw61Wz6xTQEc6guXBi0yc3uR5hSPNMC6KpqdC2l6iChAOnEXr62aP5rTI2zQhl2I2vthpmN0_2negOXQm1ZQibz8U_OSuA_tACKaG_Q13zxXdpa1q_DbdVR3mxZmPDzjL2K0L7o"/>
+</div>
+<h4 class="font-headline font-bold text-lg text-secondary">Sarah Miller</h4>
+<p class="text-xs font-black uppercase text-primary mb-2 tracking-widest">Senior Installation Architect</p>
+<p class="text-sm text-on-surface-variant italic">"We design systems that disappear into the comfort of your home."</p>
+</div>
+<!-- Tech 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow group">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img alt="Service Tech" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="experienced male technician smiling confidently, wearing a navy branded uniform, outdoors in a sunlit jacksonville residential neighborhood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd1X2K5gmNMUN9djREkhjK09UJdhLFlhcllXsT4JOIvEX22tQeLGY5WEcbJWr1hIS_dhdR9LThQxKoDZmHYjk1bO5hePyg2putwjinrLAVCQoephoD8eWPVkrlR5rer_VWaa8jm2sVtkaj36VrPjHeCAsscYxav-ejjKZsEOgrGCYUmrZ-3k5LHob7Im6DgpVQwmNh1TKKxxy-5adZVIgxUom2wU_AT3PXLjqsR2C1-3_K3lpsJUTzrQY6BX3Qsx6LDsM-ZXQucTM"/>
+</div>
+<h4 class="font-headline font-bold text-lg text-secondary">Robert Hayes</h4>
+<p class="text-xs font-black uppercase text-primary mb-2 tracking-widest">Customer Experience Lead</p>
+<p class="text-sm text-on-surface-variant italic">"Every call is an opportunity to earn a lifetime of trust."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-6 text-center">
+<div class="max-w-4xl mx-auto bg-slate-900 rounded-2xl p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<h2 class="text-3xl md:text-5xl font-headline font-black text-white mb-6">READY TO ARCHITECT <br/><span class="text-primary-container">YOUR PERFECT CLIMATE?</span></h2>
+<p class="text-slate-300 mb-10 max-w-xl mx-auto">Join the 10,000+ Jacksonville residents who trust the experts. No hidden fees, just pure engineering.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded font-headline font-black uppercase tracking-widest active:scale-95 transition-transform">
+                            Schedule Service
+                        </button>
+<button class="bg-white/10 hover:bg-white/20 text-white backdrop-blur px-8 py-4 rounded font-headline font-black uppercase tracking-widest transition-colors">
+                            View Areas
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 w-full border-t border-slate-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-8 w-full max-w-7xl mx-auto">
+<div>
+<div class="font-headline font-black text-2xl text-white mb-2">CLIMATE ARCHITECT</div>
+<p class="font-inter text-sm text-slate-400">© 2024 Climate Architect HVAC. Licensed &amp; Insured.</p>
+</div>
+<div class="flex flex-wrap gap-6 justify-center md:justify-end">
+<a class="font-inter text-sm text-slate-400 hover:text-white transition-colors underline-offset-4 hover:underline" href="#">Jacksonville</a>
+<a class="font-inter text-sm text-slate-400 hover:text-white transition-colors underline-offset-4 hover:underline" href="#">Ponte Vedra</a>
+<a class="font-inter text-sm text-slate-400 hover:text-white transition-colors underline-offset-4 hover:underline" href="#">St. Augustine</a>
+<a class="font-inter text-sm text-slate-400 hover:text-white transition-colors underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="font-inter text-sm text-slate-400 hover:text-white transition-colors underline-offset-4 hover:underline" href="#">Terms</a>
+</div>
+</div>
+</footer>
+<!-- Emergency FAB (Visible on Mobile/Standard) -->
+<div class="fixed bottom-6 right-6 z-[100]">
+<button class="w-16 h-16 bg-red-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-105 active:scale-95 transition-transform group relative">
+<span class="material-symbols-outlined text-3xl" data-icon="hvac" style="font-variation-settings: 'FILL' 1;">hvac</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-white"></span>
+</span>
+</button>
+</div>
+</body></html>

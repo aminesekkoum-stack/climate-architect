@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#c38560",
+                    "on-primary-container": "#4a2100",
+                    "on-background": "#1b1b1b",
+                    "on-tertiary-fixed": "#321200",
+                    "surface-dim": "#dadada",
+                    "surface-container": "#eeeeee",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#005773",
+                    "primary-container": "#e57407",
+                    "tertiary-fixed-dim": "#fdb78f",
+                    "secondary-fixed-dim": "#70d2ff",
+                    "inverse-primary": "#ffb786",
+                    "on-tertiary-fixed-variant": "#6a3b1c",
+                    "secondary": "#006686",
+                    "on-secondary-fixed-variant": "#004d66",
+                    "on-surface": "#1b1b1b",
+                    "background": "#f9f9f9",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#574336",
+                    "surface": "#f9f9f9",
+                    "surface-container-low": "#f3f3f3",
+                    "on-primary-fixed-variant": "#723600",
+                    "tertiary-fixed": "#ffdbc9",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#964900",
+                    "error": "#ba1a1a",
+                    "tertiary": "#865231",
+                    "on-tertiary-container": "#492104",
+                    "primary-fixed-dim": "#ffb786",
+                    "outline-variant": "#dec1b0",
+                    "inverse-on-surface": "#f1f1f1",
+                    "primary-fixed": "#ffdcc7",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary-fixed": "#311300",
+                    "secondary-container": "#68cffe",
+                    "surface-bright": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "primary": "#964900",
+                    "outline": "#8a7264",
+                    "inverse-surface": "#303030",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#c0e8ff",
+                    "surface-container-high": "#e8e8e8",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#001e2b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Work Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-900/80 glass-nav dark:bg-slate-950/80 shadow-[0_20px_40px_rgba(0,102,134,0.08)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-white tracking-tighter font-headline">CLIMATE ARCHITECT</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-orange-500 border-b-2 border-orange-500 pb-1 font-headline font-bold uppercase tracking-wider text-sm" href="services.html">Services</a>
+<a class="text-slate-300 hover:text-white transition-colors font-headline font-bold uppercase tracking-wider text-sm" href="areas.html">Areas</a>
+<a class="text-slate-300 hover:text-white transition-colors font-headline font-bold uppercase tracking-wider text-sm" href="about.html">About</a>
+<a class="text-slate-300 hover:text-white transition-colors font-headline font-bold uppercase tracking-wider text-sm" href="blog.html">Blog</a>
+<a class="text-slate-300 hover:text-white transition-colors font-headline font-bold uppercase tracking-wider text-sm" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2 rounded-lg font-headline font-bold uppercase tracking-wider text-sm transition-all duration-300 hover:shadow-[0_0_20px_rgba(150,73,0,0.4)] flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="phone_in_talk">phone_in_talk</span>
+                    Call Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="relative min-h-[819px] flex items-center overflow-hidden bg-slate-900">
+<div class="absolute inset-0 z-0">
+<img alt="HVAC Technician" class="w-full h-full object-cover opacity-40 grayscale" data-alt="Close-up of a professional HVAC technician wearing tactical gear working on a complex high-end air conditioning unit in a modern industrial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTMAncdCcdWHUFBl1YkbakS2RxxxwRF4w86byAZ6fcJoAc9gtQrQ0vl-7mbAVnTR3kYLanQ5zkVmW8ayxJ1BhpEDYBomQahgctGHxNCVpA6d0_3oHh-H-mb-fdnfpgGthyT3oyxtRFpPjSb9DDbQ7KTOSfm3-BvkAzfhwtcdphF585Q-4JHGM77Yx3o25WHi06sa5jyTiPKcQiatXNwcNECJ3hBIWC1DfG9DepIoApV3cEmEZx4A1gLpVge3iM2HMdWZaQ3VXppTA"/>
+<div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 lg:col-span-8">
+<span class="inline-block px-4 py-1 mb-6 bg-primary/20 text-primary-container rounded-full text-xs font-bold uppercase tracking-[0.2em] border border-primary/30">Jacksonville Authority</span>
+<h1 class="text-6xl md:text-8xl font-black font-headline text-white leading-none tracking-tighter mb-8">
+                        Expert AC Repair in <span class="text-primary-container">Jacksonville, FL</span>
+</h1>
+<p class="text-xl md:text-2xl text-slate-300 font-light max-w-2xl leading-relaxed">
+                        Quick diagnostics and long-lasting repairs for your home's comfort. We engineer the perfect indoor climate regardless of the Florida heat.
+                    </p>
+<div class="mt-10 flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-10 py-5 rounded-md font-headline font-extrabold uppercase tracking-widest text-lg shadow-xl hover:translate-y-[-2px] transition-all">
+                            Book Your AC Repair Today
+                        </button>
+</div>
+</div>
+<!-- Floating Emergency Status (Glassmorphism) -->
+<div class="md:col-span-5 lg:col-span-4 hidden md:block">
+<div class="bg-white/10 glass-nav p-8 rounded-xl border border-white/10 shadow-2xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+</span>
+<span class="text-red-400 font-bold tracking-widest uppercase text-xs">Live Dispatch Status</span>
+</div>
+<h3 class="text-white text-3xl font-headline font-bold mb-2">35 Min</h3>
+<p class="text-slate-400 text-sm mb-8">Average response time for Southside &amp; Beaches today.</p>
+<div class="space-y-4">
+<div class="flex justify-between text-slate-300 text-sm">
+<span>Technicians Active</span>
+<span class="text-white font-bold">14/15</span>
+</div>
+<div class="w-full bg-slate-800 h-1.5 rounded-full">
+<div class="bg-primary w-[93%] h-full rounded-full shadow-[0_0_10px_#964900]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: What's Included -->
+<section class="py-24 bg-surface px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-headline font-black tracking-tight text-secondary">The Anatomy of a Service Call</h2>
+<p class="mt-4 text-on-surface-variant text-lg">Every Climate Architect visit follows a rigorous 21-point engineering protocol to ensure maximum thermal efficiency.</p>
+</div>
+<div class="flex items-center gap-4 text-primary font-bold font-headline uppercase tracking-widest">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+                        Licensed &amp; Insured
+                    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1: Asymmetric Overlap -->
+<div class="md:col-span-2 relative bg-surface-container-low p-10 rounded-xl overflow-hidden group">
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div class="bg-secondary-container/20 w-16 h-16 flex items-center justify-center rounded-lg mb-8 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="troubleshoot">troubleshoot</span>
+</div>
+<div>
+<h3 class="text-2xl font-headline font-bold text-secondary mb-4">Precision Diagnostics</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                        Thermal imaging leak detection
+                                    </li>
+<li class="flex items-start gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                        Multi-point system health report
+                                    </li>
+<li class="flex items-start gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+                                        Immediate component failure analysis
+                                    </li>
+</ul>
+</div>
+</div>
+<img alt="Diagnostic Tool" class="absolute right-0 bottom-0 w-1/2 h-auto object-cover opacity-10 group-hover:opacity-20 transition-opacity" data-alt="Digital multimeter and thermal imaging camera sitting on a white architectural surface with clean blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfeJ7fLb4KnE8IlkMTAY4VTfq-dvR1r1_ff0C1d-gdFGXxlCGwUWqH-WiNujJGCxktNJFQBWABl39YUQHi2AaXqYWRjluAWASxxxhKV8z9QrKjIRyydPodFySC-WLfx1wSOvvIh9glfb3lVJaLsf77EXHSQ9av2Oyi0KGPjCBKr8IzLQC--Th5wP6WuPoRpZ-GUucNivsoI-umKM1-JniSfh88VEOrIDMTQ_WnuGIW8jdpF8airOOI-hL90wWE-Jlgsc_d8bUzcaE"/>
+</div>
+<!-- Feature 2 -->
+<div class="bg-secondary p-10 rounded-xl text-white flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-8" data-icon="speed">speed</span>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Rapid Restoration</h3>
+<p class="text-secondary-fixed/70 leading-relaxed">Most repairs are completed within 90 minutes of arrival thanks to our fully stocked "Mobile Architecture Units."</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-highest p-10 rounded-xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-secondary text-4xl mb-8" data-icon="security">security</span>
+<div>
+<h3 class="text-2xl font-headline font-bold text-secondary mb-4">2-Year Labor Warranty</h3>
+<p class="text-on-surface-variant">We don't just patch problems. We engineer solutions that last. Every repair comes with a locked-in performance guarantee.</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="md:col-span-2 bg-primary p-10 rounded-xl text-white relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-bold mb-6">What's Always Included</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 bg-white/10 p-4 rounded-lg">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span>Same-Day Availability</span>
+</div>
+<div class="flex items-center gap-3 bg-white/10 p-4 rounded-lg">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span>Upfront Fixed Pricing</span>
+</div>
+<div class="flex items-center gap-3 bg-white/10 p-4 rounded-lg">
+<span class="material-symbols-outlined" data-icon="cleaning_services">cleaning_services</span>
+<span>Post-Service Deep Clean</span>
+</div>
+<div class="flex items-center gap-3 bg-white/10 p-4 rounded-lg">
+<span class="material-symbols-outlined" data-icon="thumb_up">thumb_up</span>
+<span>100% Satisfaction Lock</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Transparency Section -->
+<section class="py-24 bg-surface-container-low px-6">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-black text-secondary uppercase tracking-tight">Engineering Cost Transparency</h2>
+<p class="mt-4 text-on-surface-variant max-w-2xl mx-auto">No surprise "contractor math." We provide tiered pricing ranges based on Jacksonville market data.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-outline-variant/20 rounded-2xl overflow-hidden shadow-xl border border-outline-variant/10">
+<!-- Tier 1 -->
+<div class="bg-surface-container-lowest p-10 flex flex-col">
+<div class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-4">Diagnostic Level</div>
+<h4 class="text-2xl font-headline font-bold text-secondary mb-2">Standard Service</h4>
+<div class="text-4xl font-black font-headline text-on-surface mb-6">$89 - $149</div>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">Includes full multi-point diagnostic, drain line flush, and system efficiency report.</p>
+<ul class="space-y-4 mb-10 text-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check">check</span>
+                                Expert Technician Arrival
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check">check</span>
+                                Comprehensive Quote
+                            </li>
+</ul>
+<button class="w-full py-4 border-2 border-secondary text-secondary font-headline font-bold uppercase tracking-widest text-sm rounded hover:bg-secondary hover:text-white transition-all">Book Standard</button>
+</div>
+<!-- Tier 2 - Featured -->
+<div class="bg-secondary p-10 flex flex-col relative">
+<div class="absolute top-0 right-10 bg-primary-container text-on-primary-container px-4 py-1 text-[10px] font-black uppercase tracking-widest rounded-b-md">Most Common</div>
+<div class="text-primary-container font-bold uppercase tracking-[0.2em] text-xs mb-4">Component Repair</div>
+<h4 class="text-2xl font-headline font-bold text-white mb-2">Common Repairs</h4>
+<div class="text-4xl font-black font-headline text-white mb-6">$250 - $650</div>
+<p class="text-secondary-fixed/60 text-sm mb-8 flex-grow">Capacitors, fan motors, contactors, and control board replacements.</p>
+<ul class="space-y-4 mb-10 text-sm text-white/80">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base" data-icon="check">check</span>
+                                OEM Certified Parts
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base" data-icon="check">check</span>
+                                2-Year Warranty
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base" data-icon="check">check</span>
+                                Lab Test Verified
+                            </li>
+</ul>
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-extrabold uppercase tracking-widest text-sm rounded shadow-lg">Schedule Repair</button>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container-lowest p-10 flex flex-col">
+<div class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-4">Structural Service</div>
+<h4 class="text-2xl font-headline font-bold text-secondary mb-2">Major Systems</h4>
+<div class="text-4xl font-black font-headline text-on-surface mb-6">$850+</div>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">Evaporator coils, compressor rebuilds, and full system re-engineering.</p>
+<ul class="space-y-4 mb-10 text-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check">check</span>
+                                Engineering Supervisor Review
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check">check</span>
+                                Financing Available (0%)
+                            </li>
+</ul>
+<button class="w-full py-4 border-2 border-secondary text-secondary font-headline font-bold uppercase tracking-widest text-sm rounded hover:bg-secondary hover:text-white transition-all">Get Estimate</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature CTA Section -->
+<section class="py-24 bg-white px-6 overflow-hidden relative">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
+<h2 class="text-5xl md:text-6xl font-headline font-black text-secondary leading-tight mb-8">Ready to reclaim your <span class="text-primary">comfort?</span></h2>
+<p class="text-xl text-on-surface-variant mb-12 leading-relaxed">Don't let a failing AC unit compromise your home's structural integrity or your family's health. Our architects are standing by.</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="bg-gradient-to-r from-primary to-primary-container text-white text-center px-8 py-5 rounded font-headline font-black uppercase tracking-widest text-lg shadow-xl hover:shadow-primary/40 transition-all flex items-center justify-center gap-3" href="tel:9045550199">
+<span class="material-symbols-outlined" data-icon="phone_in_talk">phone_in_talk</span>
+                            Book Your AC Repair Today
+                        </a>
+</div>
+</div>
+<div class="relative">
+<img alt="Comfortable Home" class="rounded-2xl shadow-2xl z-10 relative" data-alt="Interior of a luxury Jacksonville beach house with high ceilings and large windows, reflecting a cool and comfortable indoor atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV-2CDD5YvV6b1ek3vL3FFnFBsma3bio6G-EmFXixiHLU_4JeTHgjc6MJIn4F3pU7brpBF_yUMau8vUCiWDhrL15i-tbjlJGtp_5x-XyLSLp5Gyl4S74DsMGnoBrmfxD7rh-N_6QsETNyUTpCgArdrgXNExpmkNBvHgrKwn44Dg_2Icu_ZFsvyBR9SVSmoHDVtuYHYG_FNlj8A-pEpRxZMDz3EE1F4ryrZ4lk5tMiko_2LgIEofai5Y8HUpSWCe7HnK3BQS6Gwmko"/>
+<div class="absolute -bottom-6 -right-6 bg-secondary text-white p-8 rounded-xl shadow-2xl z-20 hidden md:block">
+<div class="text-primary-container font-black text-3xl font-headline">98%</div>
+<div class="text-xs uppercase font-bold tracking-widest text-white/60">Repeat Clients</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Chatbot Mockup -->
+<div class="fixed bottom-6 right-6 z-[100]">
+<button class="w-16 h-16 bg-secondary rounded-full shadow-2xl flex items-center justify-center text-white hover:scale-110 transition-transform group">
+<span class="material-symbols-outlined text-3xl group-hover:hidden" data-icon="chat">chat</span>
+<span class="material-symbols-outlined text-3xl hidden group-hover:block" data-icon="close">close</span>
+</button>
+<div class="hidden md:flex absolute bottom-20 right-0 w-80 bg-white shadow-2xl rounded-2xl flex-col border border-outline-variant/20 overflow-hidden pointer-events-none opacity-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto transition-all">
+<div class="bg-secondary p-4 text-white font-headline font-bold flex items-center gap-2">
+<div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                Climate Architect Assistant
+            </div>
+<div class="p-4 h-64 bg-surface overflow-y-auto space-y-4">
+<div class="bg-surface-container p-3 rounded-lg text-sm self-start max-w-[85%]">
+                    Hello! Are you experiencing an AC emergency in Jacksonville?
+                </div>
+<div class="bg-primary text-white p-3 rounded-lg text-sm self-end max-w-[85%] ml-auto">
+                    Yes, my unit stopped cooling.
+                </div>
+<div class="bg-surface-container p-3 rounded-lg text-sm self-start max-w-[85%]">
+                    I can dispatch a technician immediately. What is your zip code?
+                </div>
+</div>
+<div class="p-4 border-t border-outline-variant/10">
+<input class="w-full bg-surface-container p-2 rounded border-none text-sm focus:ring-2 focus:ring-primary" placeholder="Type your reply..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-slate-900 border-t border-slate-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-8 w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<div class="font-work-sans font-black text-white text-2xl">CLIMATE ARCHITECT</div>
+<p class="font-inter text-sm text-slate-400 max-w-xs">Engineering superior comfort for the First Coast since 1998.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-12">
+<a class="text-slate-500 hover:text-white transition-colors underline-offset-4 hover:underline font-inter text-sm" href="#">Jacksonville</a>
+<a class="text-slate-500 hover:text-white transition-colors underline-offset-4 hover:underline font-inter text-sm" href="#">Ponte Vedra</a>
+<a class="text-slate-500 hover:text-white transition-colors underline-offset-4 hover:underline font-inter text-sm" href="#">St. Augustine</a>
+<a class="text-slate-500 hover:text-white transition-colors underline-offset-4 hover:underline font-inter text-sm" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-white transition-colors underline-offset-4 hover:underline font-inter text-sm" href="#">Terms</a>
+</div>
+<div class="text-right">
+<p class="font-inter text-sm text-slate-400">© 2024 Climate Architect HVAC. Licensed &amp; Insured.</p>
+</div>
+</div>
+</footer>
+</body></html>
